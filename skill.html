@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+.skill {
+  position: relative;
+  margin-bottom: 20px;
+}
+.title {
+    margin-top: 30px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 20px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+}
+.skill-fill {
+  background: blue;
+  height: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 30px;
+}
+.skill-percent {
+  font-size: 20px;
+}
+.html {
+  animation-name:html;
+  animation-duration:  2s;
+  width: 95%;
+}
+.css {
+  animation-name: css;
+  animation-duration:  2s;
+  width: 90%;
+}
+.boot {
+  animation-name: boot;
+  animation-duration: 2s;
+  width: 70%;
+}
+.js {
+  animation-name: js;
+  animation-duration: 2s;
+  width: 50%;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes boot {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+           <span style="font-weight: bold; font-size: larger;"><i>PORTFOLIO</i></span>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+        <h1><i>My Skills</i></h1>
+        <div class="skills">
+          <div class="skill">
+            <div class="title">HTML</div>
+            <div class="skill-bar"></div>
+            <div class="html skill-fill">
+              <span class="skill-percent">95%</span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="title">CSS</div>
+            <div class="skill-bar"></div>
+            <div class="css skill-fill">
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="title">BOOTSTRAP</div>
+            <div class="skill-bar"></div>
+            <div class="boot skill-fill">
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="title">JavaScript</div>
+            <div class="skill-bar"></div>
+            <div class="js skill-fill">
+              <span class="skill-percent">70%</span>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

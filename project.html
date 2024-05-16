@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+img{
+    width: 200px;
+    height: 150px;
+   margin-top: 10px;
+    border:2px solid black ;
+}
+.portfolio .project .box{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.topic >h2{
+    text-align: center;
+    font-style: italic;
+    margin-top:10px;
+}
+.box:hover img{
+    rotate: 20deg;
+    transition-duration: 0.6s;
+    transition-timing-function:  ease-in-out;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+}
+ 
+.project{
+    margin-top: 40px;
+    margin-left:100px ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+button{
+    margin-left:60px ;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(89, 142, 235);
+    border:1px solid black;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+           <span style="font-weight: bold; font-size: larger;"><i>PORTFOLIO</i></span>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+        <div class="portfolio">
+            <div class="detail">
+                <div class="topic">
+                    <h2>Latest Projects</h2>
+                </div>
+                <div class="project">
+                    <div class="box">                      
+                        <img src="project1.png" alt=""> <br>
+                         <button><a href="https://shune212.github.io/Assignment1/">See More</a></button>
+                    </div>   
+                    <div class="box">                    
+                        <img src="project2.png" alt=""><br>
+                        <button><a href="https://shune212.github.io/assignment2/">See More</a></button>
+                    </div>   
+                    <div class="box">                     
+                        <img src="project3.png" alt=""><br>
+                        <button><a href="https://shune212.github.io/assignment3/">See More</a></button>
+                    </div>   
+                    <div class="box">                      
+                        <img src="project4.png" alt=""><br>
+                        <button><a href="https://shune212.github.io/assignment4/">See More</a></button>
+                    </div>  
+                    <div class="box">                  
+                        <img src="project5.png" alt=""><br>
+                        <button><a href="https://shune212.github.io/Assignment5/">See More</a></button>
+                    </div>  
+                    <div class="box">
+                        <img src="project6.png" alt=""><br>
+                        <button><a href="https://shune212.github.io/Assignment6/">See More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
